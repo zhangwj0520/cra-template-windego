@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "baseUrl": "src",
+    "paths": {
+      "@*": ["*"],
+      "@assets/*": ["assets/*"],
+      "@components/*": ["components/*"],
+      "@pages/*": ["pages/*"],
+      "@hooks/*": ["hooks/*"],
+      "@utils/*": ["utils/*"],
+      "@store/*": ["store/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"],
+  "include": ["src"]
+}
