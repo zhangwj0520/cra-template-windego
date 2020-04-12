@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import reduxImg from '../../assets/logo.svg';
 import { useSelector, useDispatch } from 'react-redux';
 // import { selectUserInfo } from '@src/store/modules/userInfo.module';
-import styles from './styles.module.scss';
+import styles from './styles.scss';
 import {
   decrement,
   increment,
