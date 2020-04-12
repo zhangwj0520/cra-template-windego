@@ -1,8 +1,10 @@
-/* eslint-disable react/button-has-type */
 import React, { useState } from 'react';
-import reduxImg from '../../assets/logo.svg';
+import reduxImg from '@assets/logo.svg';
 import { useSelector, useDispatch } from 'react-redux';
+import WaterMark from '@components/WaterMark';
 // import { selectUserInfo } from '@src/store/modules/userInfo.module';
+
+import { Button } from 'antd';
 import styles from './styles.scss';
 import {
   decrement,
@@ -21,6 +23,8 @@ function App() {
 
   return (
     <div className={styles.container}>
+      <WaterMark />
+      <Button>sss</Button>
       <header className={styles.header}>
         <img src={reduxImg} className={styles.logo} alt="logo" />
         <div className={styles.row}>
@@ -61,7 +65,9 @@ function App() {
           </button>
         </div>
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Edit
+          <code>src/App.tsx</code>
+          and save to reload.
         </p>
         <span>
           <span>Learn </span>
@@ -91,7 +97,8 @@ function App() {
           >
             Redux Toolkit
           </a>
-          ,<span> and </span>
+          ,
+          <span> and </span>
           <a
             className={styles.link}
             href="https://react-redux.js.org/"

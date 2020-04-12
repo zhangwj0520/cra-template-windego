@@ -1,9 +1,7 @@
 import React, { useRef, useEffect } from 'react';
-import uuid from 'uuid';
-
-const id = `watermark-${uuid.v4()}`;
 
 
+const id = `watermark-${Date.now().toString(36)}`;
 const getImgUrl = ({
   width = 400,
   textAlign = 'center',
@@ -15,7 +13,6 @@ const getImgUrl = ({
 } = {}) => {
   const ANGLE = (rotate * Math.PI) / 180;
   const height = width * Math.tan(ANGLE);
-
   const canvas = document.createElement('canvas');
 
   canvas.setAttribute('width', width);
