@@ -1,6 +1,6 @@
 {
   "name": "cra-template-windego",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "zhangweijie",
   "scripts": {
     "prettify": "prettier --write './template/src/**/*.js'",
